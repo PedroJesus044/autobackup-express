@@ -6,7 +6,7 @@ const app = express();
 var corsOptions = {
   //Esto debe referenciarse a sí mismo
   //origin: "http://auto-backup-vuejs-1:8081"
-  origin: process.env.EXPRESS_CORS_OPTIONS.split(',')
+  origin: process.env.EXPRESS_CORS_OPTIONS
 };
 
 console.log(corsOptions.origin);
