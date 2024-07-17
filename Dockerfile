@@ -9,5 +9,8 @@ ENV ABKP_DB_PASS=mariadb
 ENV ABKP_DB_NAME=mariadb
 ENV TZ=America/Mexico_City
 
+USER 0
 RUN npm install
+
+USER 1001
 CMD ["node", "server.js"]
