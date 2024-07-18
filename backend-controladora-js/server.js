@@ -5,12 +5,12 @@ const app = express();
 
 var corsOptions = {
   //Esto debe referenciarse a sí mismo
-  //origin: "http://auto-backup-vuejs-1:8081"
-  origin: process.env.EXPRESS_CORS_OPTIONS
+  //"origin": "http://auto-backup-vuejs-1:8081"
+  "origin": process.env.EXPRESS_CORS_OPTIONS
 };
 
-console.log(corsOptions.origin);
 
+console.log(corsOptions.origin);
 app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
